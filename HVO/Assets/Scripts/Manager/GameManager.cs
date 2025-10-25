@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class GameManager : SingletonManager<GameManager>
 {
+    [Header("UI")]
+    [SerializeField] private PointToClick m_pointToClickPrefab;   
+
     public Unit ActiveUnit;
 
     private Vector2 m_InitialTouchPosition; 
@@ -43,7 +46,12 @@ public class GameManager : SingletonManager<GameManager>
 
     void HandleClickOnGround(Vector2 worldPoint)
     {
-        ActiveUnit.MoveTo(worldPoint);  
+        if (HasActiveUnit && IsHumanoid(ActiveUnit))
+        {
+            DisplayClickEffect(worldPoint);
+            ActiveUnit.MoveTo(worldPoint);
+        }
+     
     }   
 
     bool HasClickedOnUnit(RaycastHit2D hit, out Unit unit)
@@ -58,8 +66,22 @@ public class GameManager : SingletonManager<GameManager>
         return false;
     }
 
+    bool HasClickedOnActiveUnit(Unit ClickedUnit)
+
+    {
+        return ClickedUnit == ActiveUnit;   
+    }
+
     void HandleClickOnUnit(Unit unit)
     {
+        if(HasActiveUnit)
+        {
+            if(HasClickedOnActiveUnit(unit))
+            {
+                CancelActiveUnit();
+                return;
+            }
+        }
         SelectNewUnit(unit);    
 
     }   
@@ -72,6 +94,21 @@ public class GameManager : SingletonManager<GameManager>
         }   
         ActiveUnit = unit;  
         ActiveUnit.Select(); 
+    }
+
+    void CancelActiveUnit()
+    {
+        ActiveUnit.DeSelect();
+        ActiveUnit = null;   
+    }
+    void DisplayClickEffect(Vector2 WorldPoint)
+    {
+        Instantiate(m_pointToClickPrefab, (Vector3)WorldPoint, Quaternion.identity);
+    }
+
+    bool IsHumanoid(Unit unit)
+    {
+        return unit is HumanoidUnit;
     }
 }
  
