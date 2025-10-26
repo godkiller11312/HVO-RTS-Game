@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\son\\HVO\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|c:\\users\\son\\hvo\\assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|c:\\users\\son\\hvo\\assets\\scripts\\ui\\actionbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\actionbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\units\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\units\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|c:\\users\\son\\hvo\\assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\units\\humanoidunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\units\\humanoidunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\ui\\pointtoclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\pointtoclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\manager\\singletonmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\singletonmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|c:\\users\\son\\hvo\\assets\\scripts\\ai\\aipawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\ai\\aipawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ai\\aipawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\units\\humanoidunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\units\\humanoidunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\son\\HVO\\Assets\\Images\\Tiny Swords (Update 010)\\Scripts\\AI\\AiPawn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,7 +46,32 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "ActionBar.cs",
+              "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\UI\\ActionBar.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ActionBar.cs",
+              "ToolTip": "C:\\Users\\son\\HVO\\Assets\\Scripts\\UI\\ActionBar.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\ActionBar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-26T09:31:21.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PointToClick.cs",
+              "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\UI\\PointToClick.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\PointToClick.cs",
+              "ToolTip": "C:\\Users\\son\\HVO\\Assets\\Scripts\\UI\\PointToClick.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\PointToClick.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T01:31:19.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AiPawn.cs",
               "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\AI\\AiPawn.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AI\\AiPawn.cs",
@@ -46,12 +79,11 @@
               "RelativeToolTip": "Assets\\Scripts\\AI\\AiPawn.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-24T01:34:22.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-24T01:34:22.291Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "SingletonManager.cs",
               "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Manager\\SingletonManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\SingletonManager.cs",
@@ -59,51 +91,48 @@
               "RelativeToolTip": "Assets\\Scripts\\Manager\\SingletonManager.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwA8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T08:34:16.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-23T08:34:16.67Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Manager\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\GameManager.cs",
               "ToolTip": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Manager\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Manager\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAADwv3cAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-23T08:12:30.813Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "HumanoidUnit.cs",
               "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Units\\HumanoidUnit.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Units\\HumanoidUnit.cs",
               "ToolTip": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Units\\HumanoidUnit.cs",
               "RelativeToolTip": "Assets\\Scripts\\Units\\HumanoidUnit.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBEAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T10:32:45.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T10:32:45.099Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Unit.cs",
               "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Units\\Unit.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Units\\Unit.cs",
               "ToolTip": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Units\\Unit.cs",
               "RelativeToolTip": "Assets\\Scripts\\Units\\Unit.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAQwCsAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwCsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-19T10:29:53.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-19T10:29:53.069Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "AiPawn.cs",
               "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Images\\Tiny Swords (Update 010)\\Scripts\\AI\\AiPawn.cs",
               "RelativeDocumentMoniker": "Assets\\Images\\Tiny Swords (Update 010)\\Scripts\\AI\\AiPawn.cs",
