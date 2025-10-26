@@ -15,7 +15,7 @@ public class GameManager : SingletonManager<GameManager>
 
         if (Input.GetMouseButtonUp(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
         {
-            DetectClick(inputPosition);
+           
             m_InitialTouchPosition = inputPosition;     
         }
         if (Input.GetMouseButtonUp(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended))
@@ -66,26 +66,25 @@ public class GameManager : SingletonManager<GameManager>
         return false;
     }
 
-    bool HasClickedOnActiveUnit(Unit ClickedUnit)
-
+    bool HasClickedOnActiveUnit(Unit clickedUnit)
     {
-        return ClickedUnit == ActiveUnit;   
+        
+        return clickedUnit == ActiveUnit;
     }
-
     void HandleClickOnUnit(Unit unit)
     {
-        if(HasActiveUnit)
+        if (HasActiveUnit)
         {
-            if(HasClickedOnActiveUnit(unit))
+            if (HasClickedOnActiveUnit(unit))
             {
                 CancelActiveUnit();
                 return;
             }
         }
-        SelectNewUnit(unit);    
 
-    }   
-    
+        SelectNewUnit(unit);
+    }
+
     void SelectNewUnit (Unit unit)
     {
         if (ActiveUnit != null)
@@ -99,7 +98,7 @@ public class GameManager : SingletonManager<GameManager>
     void CancelActiveUnit()
     {
         ActiveUnit.DeSelect();
-        ActiveUnit = null;   
+        ActiveUnit = null;
     }
     void DisplayClickEffect(Vector2 WorldPoint)
     {
