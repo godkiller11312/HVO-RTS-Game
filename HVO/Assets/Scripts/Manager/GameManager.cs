@@ -1,19 +1,32 @@
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Tilemaps;
 
 public class GameManager : SingletonManager<GameManager>
 {
+
+    [Header("Tilemaps")]
+    [SerializeField] private Tilemap m_WalkableTilemap;
+    [SerializeField] private Tilemap m_OverlayTilemap;
+    [SerializeField] private Tilemap[] m_UnreachableTilemaps;   
+
     [Header("UI")]
     [SerializeField] private PointToClick m_pointToClickPrefab;   
 
     public Unit ActiveUnit;
     public ActionBar m_ActionBar; 
 
-    public Vector2 InputPosition => Input.touchCount > 0 ? (Vector2)Input.GetTouch(0).position : (Vector2)Input.mousePosition;       
-    private Vector2 m_InitialTouchPosition; 
+
+
+  
+    
     public bool HasActiveUnit => ActiveUnit != null;
-    public bool IsLeftClickOrTapDown => Input.GetMouseButtonUp(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began);
-    public bool IsLeftClickOrTapUp => Input.GetMouseButtonUp(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended);
+
+
+    [SerializeField] private PlacementProcess m_PlacementProcess;    
+
     private void Start()
     {
         Clear_ActionBar_UI();
@@ -21,26 +34,26 @@ public class GameManager : SingletonManager<GameManager>
 
     private void Update()
     {
-
-        if (IsLeftClickOrTapDown)
+        if(m_PlacementProcess != null)
         {
            
-            m_InitialTouchPosition = InputPosition;     
+            m_PlacementProcess.Update();
+            return;
         }
-        if (IsLeftClickOrTapUp)
+        else if (HvoUtils.TryGetShortLeftClickPosition(out var inputPosition))
         {
-            if(Vector2.Distance(m_InitialTouchPosition, InputPosition) < 10f)
-            { 
-                DetectClick(InputPosition); 
-            }
-
+            DetectClick(inputPosition);
         }
+       
+
+
+
     }
 
     void DetectClick(Vector2 inputPosition)
     {
 
-        if (IsPointerOverUIElement())
+        if (HvoUtils.IsPointerOverUIElement())
         {
             return;
         }
@@ -106,7 +119,7 @@ public class GameManager : SingletonManager<GameManager>
         }   
         ActiveUnit = unit;  
         ActiveUnit.Select(); 
-        Show_UnitActions();
+        Show_UnitActions(unit);
     }
 
     void CancelActiveUnit()
@@ -126,15 +139,20 @@ public class GameManager : SingletonManager<GameManager>
         return unit is HumanoidUnit;
     }
 
-    void Show_UnitActions()
+    void Show_UnitActions(Unit unit)
     {
         Clear_ActionBar_UI();
-        var hardcoreAtions = 2;
-        for(int i =0; i< hardcoreAtions; i++)
+        if (unit.Actions.Length == 0 )
         {
-            m_ActionBar.RegisterAction();
-        }   
+            m_ActionBar.Hide();
+            return;
+        }
+
         m_ActionBar.Show();
+        foreach (var action in unit.Actions)
+        {
+            m_ActionBar.RegisterAction(action.Icon, () => action.Execute(this));
+        }   
     }   
 
     void Clear_ActionBar_UI()
@@ -142,17 +160,13 @@ public class GameManager : SingletonManager<GameManager>
         m_ActionBar.ClearActions();
         m_ActionBar.Hide();
     }
-    bool IsPointerOverUIElement()
+   
+
+    public void StartBuildProcess(BuildActionSO buildAction)
     {
-        if (Input.touchCount > 0)
-        {
-            var touch = Input.GetTouch(0);
-           return EventSystem.current.IsPointerOverGameObject(touch.fingerId);
-        }
-        else
-        {
-            return EventSystem.current.IsPointerOverGameObject();   
-        }
+      
+        m_PlacementProcess = new PlacementProcess(buildAction, m_WalkableTilemap, m_OverlayTilemap, m_UnreachableTilemaps);
+        m_PlacementProcess.ShowPlacementOutLine();
     }
 }
  

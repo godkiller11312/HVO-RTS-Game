@@ -2,6 +2,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.Events;
 public class ActionBar : MonoBehaviour
 {
     [SerializeField] private Image m_BackgroundImage;
@@ -17,10 +18,12 @@ public class ActionBar : MonoBehaviour
         Hide(); 
     }
 
-    public void RegisterAction()
+    public void RegisterAction(Sprite icon, UnityAction action )
     {
-        var actionButton = Instantiate(m_ActionButtonPrefab, transform);    
+        var actionButton = Instantiate(m_ActionButtonPrefab, transform);      
+        actionButton.Init(icon, action);    
         m_ActionButtons.Add(actionButton);
+
     }
 
     public void ClearActions()
