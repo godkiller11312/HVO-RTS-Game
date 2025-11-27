@@ -5,9 +5,11 @@
 )]
 public class BuildActionSO : ActionSO
 {
+    [SerializeField] private StructureUnit m_StructurePrefab;
     [SerializeField] private Sprite m_PlacementSprite;
     [SerializeField] private Sprite m_FoundationSprite;
     [SerializeField] private Sprite m_CompletionSprite;
+    [SerializeField] private float m_ConstructionTime;
 
     [SerializeField] private Vector3Int m_BuildingSize;
     [SerializeField] private Vector3Int m_OriginOffset;   
@@ -24,7 +26,8 @@ public class BuildActionSO : ActionSO
     public int GoldCost => m_GoldCost;  
     public int WoodCost => m_WoodCost;      
 
-  
+    public StructureUnit StructurePrefab => m_StructurePrefab;
+    public float ConstructionTime => m_ConstructionTime;     
     public override void Execute(GameManager manager)
     {
         manager.StartBuildProcess(this);      

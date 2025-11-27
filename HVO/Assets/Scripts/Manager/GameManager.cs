@@ -4,6 +4,11 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Tilemaps;
 
+public enum ClickType
+{
+     Move ,Attack, Build
+}
+
 public class GameManager : SingletonManager<GameManager>
 {
 
@@ -13,15 +18,23 @@ public class GameManager : SingletonManager<GameManager>
     [SerializeField] private Tilemap[] m_UnreachableTilemaps;   
 
     [Header("UI")]
-    [SerializeField] private PointToClick m_pointToClickPrefab;   
-
+    [SerializeField] private PointToClick m_pointToMovePrefab;
+    [SerializeField] private PointToClick m_pointToBuildPrefab;
+    [SerializeField] private ConfirmationBar m_BuildConfirmationBar;     
     public Unit ActiveUnit;
-    public ActionBar m_ActionBar; 
+    public ActionBar m_ActionBar;
+    private int m_Gold = 1000;
+    private int m_Wood = 1000;
+    [Header("VFX")]
 
+    [SerializeField] private ParticleSystem m_ConstructionEffectPrefab;
 
-
-  
     
+    
+    
+    public int Gold => m_Gold;
+    public int Wood => m_Wood;  
+
     public bool HasActiveUnit => ActiveUnit != null;
 
 
@@ -74,7 +87,7 @@ public class GameManager : SingletonManager<GameManager>
     {
         if (HasActiveUnit && IsHumanoid(ActiveUnit))
         {
-            DisplayClickEffect(worldPoint);
+            DisplayClickEffect(worldPoint, ClickType.Move);
             ActiveUnit.MoveTo(worldPoint);
         }
      
@@ -106,10 +119,19 @@ public class GameManager : SingletonManager<GameManager>
                 CancelActiveUnit();
                 return;
             }
+            else if (WorkerClickedOnUnfinishedBuild(unit))
+            {
+                DisplayClickEffect(unit.transform.position, ClickType.Build);
+               ((WorkerUnit)ActiveUnit).SendToBuild(unit as StructureUnit);
+                return;
+            }
         }
 
         SelectNewUnit(unit);
     }
+
+    bool WorkerClickedOnUnfinishedBuild (Unit clickedUnit)
+    { return ActiveUnit is WorkerUnit && clickedUnit is StructureUnit structure && structure.IsUnderConstruction; }
 
     void SelectNewUnit (Unit unit)
     {
@@ -129,9 +151,16 @@ public class GameManager : SingletonManager<GameManager>
         ActiveUnit = null;
         Clear_ActionBar_UI();   
     }
-    void DisplayClickEffect(Vector2 WorldPoint)
+    void DisplayClickEffect(Vector2 WorldPoint, ClickType clickType)
     {
-        Instantiate(m_pointToClickPrefab, (Vector3)WorldPoint, Quaternion.identity);
+        if(clickType == ClickType.Move)
+        {
+            Instantiate(m_pointToMovePrefab, (Vector3)WorldPoint, Quaternion.identity);
+        }
+        else if(clickType == ClickType.Build)
+        {
+            Instantiate(m_pointToBuildPrefab, (Vector3)WorldPoint, Quaternion.identity);
+        }
     }
 
     bool IsHumanoid(Unit unit)
@@ -160,13 +189,80 @@ public class GameManager : SingletonManager<GameManager>
         m_ActionBar.ClearActions();
         m_ActionBar.Hide();
     }
-   
+    
+    void ConfirmBuildPlacement()
+    {
+        if(!TryDeductResources(m_PlacementProcess.BuildAction.GoldCost, m_PlacementProcess.BuildAction.WoodCost))
+        {
+            Debug.Log("Not enough resources to build!");
+            return;
+        }
+        if (m_PlacementProcess.TryFinalizePlacement(out Vector3 buildPosition))
+        {
+            DisplayClickEffect(buildPosition,ClickType.Build);      
+            m_BuildConfirmationBar.Hide();
+            new BuildingProcess(m_PlacementProcess.BuildAction, buildPosition, (WorkerUnit)ActiveUnit , m_ConstructionEffectPrefab); 
+
+            ActiveUnit.MoveTo(buildPosition);
+            ActiveUnit.SetTask(UnitTask.Build); 
+            m_PlacementProcess = null;
+        }
+        else
+        {
+                       RevertResources(m_PlacementProcess.BuildAction.GoldCost, m_PlacementProcess.BuildAction.WoodCost);
+            Debug.Log("Invalid placement position!");
+        }
+    }
+
+    void CancelBuildPlacement()
+    {
+
+        m_BuildConfirmationBar.Hide();
+        m_PlacementProcess.ClearUp();
+        m_PlacementProcess = null;  
+
+    }   
 
     public void StartBuildProcess(BuildActionSO buildAction)
     {
       
+        if(m_PlacementProcess != null)
+        {
+            return;
+        }
         m_PlacementProcess = new PlacementProcess(buildAction, m_WalkableTilemap, m_OverlayTilemap, m_UnreachableTilemaps);
         m_PlacementProcess.ShowPlacementOutLine();
+        m_BuildConfirmationBar.SetupHooks(ConfirmBuildPlacement, CancelBuildPlacement);
+        m_BuildConfirmationBar.Show(buildAction.GoldCost, buildAction.WoodCost);   
+       
+
+    }
+
+    bool TryDeductResources(int goldCost, int woodCost)
+    {
+        if(m_Gold >= goldCost && m_Wood >= woodCost)
+        {
+            m_Gold -= goldCost;
+            m_Wood -= woodCost;
+            return true;
+        }
+        return false;
+    }
+    void OnGUI()
+    {
+        GUI.Label(new Rect(20, 40, 200, 20), "Gold: " + m_Gold.ToString(), new GUIStyle { fontSize = 30});
+        GUI.Label(new Rect(20, 80, 200, 20), "Gold: " + m_Wood.ToString(), new GUIStyle { fontSize = 30 });
+        if (ActiveUnit!= null)
+        {
+            GUI.Label(new Rect(20, 120, 200, 20), "State: " + ActiveUnit.CurrentState.ToString(), new GUIStyle { fontSize = 30 });
+            GUI.Label(new Rect(20, 160, 200, 20), "Task: " + ActiveUnit.CurrentTask.ToString(), new GUIStyle { fontSize = 30 });
+        }
+    }
+
+    void RevertResources(int gold, int wood)
+    {
+        m_Gold += gold;
+        m_Wood += wood;
     }
 }
  

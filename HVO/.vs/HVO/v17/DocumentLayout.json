@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\son\\HVO\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|c:\\users\\son\\hvo\\assets\\scripts\\utils\\placementprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utils\\placementprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|c:\\users\\son\\hvo\\assets\\scripts\\units\\workerunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\units\\workerunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\utils\\buildingprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utils\\buildingprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\units\\actions\\structureunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\units\\actions\\structureunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\units\\actions\\buildactionso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\units\\actions\\buildactionso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\units\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\units\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\units\\humanoidunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\units\\humanoidunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\ui\\resourcerequirementsdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\resourcerequirementsdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\ui\\confirmationbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\confirmationbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\utils\\placementprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utils\\placementprocess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\utils\\hvoutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,24 +55,8 @@
       "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\units\\actions\\actionso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\ui\\actionbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\actionbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\manager\\singletonmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\manager\\singletonmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\ui\\pointtoclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\pointtoclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\units\\humanoidunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\units\\humanoidunit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|C:\\Users\\son\\HVO\\assets\\scripts\\units\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9805A6E9-9CC0-FBBD-68A4-402DF1B676A9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\units\\unit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\son\\HVO\\Library\\PackageCache\\com.unity.ugui@27299721f2fd\\Editor\\UGUI\\UI\\GraphicEditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,93 +83,129 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PlacementProcess.cs",
-              "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Utils\\PlacementProcess.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Utils\\PlacementProcess.cs",
-              "ToolTip": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Utils\\PlacementProcess.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Utils\\PlacementProcess.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAiwH0AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T15:54:57.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Manager\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\GameManager.cs",
               "ToolTip": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Manager\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Manager\\GameManager.cs",
-              "ViewState": "AgIAAJIAAAAAAAAAAAAcwKcAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAPQAAAAAAAAAAAAuwAMBAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-23T08:12:30.813Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WorkerUnit.cs",
+              "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Units\\WorkerUnit.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Units\\WorkerUnit.cs",
+              "ToolTip": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Units\\WorkerUnit.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Units\\WorkerUnit.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAuwE0AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T02:08:42.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StructureUnit.cs",
+              "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Units\\Actions\\StructureUnit.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Units\\Actions\\StructureUnit.cs",
+              "ToolTip": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Units\\Actions\\StructureUnit.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Units\\Actions\\StructureUnit.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAIwBgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T01:52:31.836Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ActionButton.cs",
-              "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\UI\\ActionButton.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ActionButton.cs",
-              "ToolTip": "C:\\Users\\son\\HVO\\Assets\\Scripts\\UI\\ActionButton.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\ActionButton.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T09:51:22.188Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SingletonManager.cs",
-              "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Manager\\SingletonManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\SingletonManager.cs",
-              "ToolTip": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Manager\\SingletonManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Manager\\SingletonManager.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwA8AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-23T08:34:16.67Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "HumanoidUnit.cs",
               "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Units\\HumanoidUnit.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Units\\HumanoidUnit.cs",
               "ToolTip": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Units\\HumanoidUnit.cs",
               "RelativeToolTip": "Assets\\Scripts\\Units\\HumanoidUnit.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-19T10:32:45.099Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "Unit.cs",
               "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Units\\Unit.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Units\\Unit.cs",
               "ToolTip": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Units\\Unit.cs",
               "RelativeToolTip": "Assets\\Scripts\\Units\\Unit.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAwwH8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-19T10:29:53.069Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "BuildingProcess.cs",
+              "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Utils\\BuildingProcess.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Utils\\BuildingProcess.cs",
+              "ToolTip": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Utils\\BuildingProcess.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Utils\\BuildingProcess.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABrAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T01:07:54.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ResourceRequirementsDisplay.cs",
+              "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\UI\\ResourceRequirementsDisplay.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ResourceRequirementsDisplay.cs",
+              "ToolTip": "C:\\Users\\son\\HVO\\Assets\\Scripts\\UI\\ResourceRequirementsDisplay.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\ResourceRequirementsDisplay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T03:54:45.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConfirmationBar.cs",
+              "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\UI\\ConfirmationBar.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ConfirmationBar.cs",
+              "ToolTip": "C:\\Users\\son\\HVO\\Assets\\Scripts\\UI\\ConfirmationBar.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\ConfirmationBar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T01:25:03.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "BuildActionSO.cs",
               "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Units\\Actions\\BuildActionSO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Units\\Actions\\BuildActionSO.cs",
               "ToolTip": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Units\\Actions\\BuildActionSO.cs",
               "RelativeToolTip": "Assets\\Scripts\\Units\\Actions\\BuildActionSO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAiwCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T07:56:22.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-09T07:56:22.325Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
+              "Title": "PlacementProcess.cs",
+              "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Utils\\PlacementProcess.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Utils\\PlacementProcess.cs",
+              "ToolTip": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Utils\\PlacementProcess.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Utils\\PlacementProcess.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAswJwAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T15:54:57.899Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ActionBar.cs",
               "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\UI\\ActionBar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\ActionBar.cs",
@@ -169,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "HvoUtils.cs",
               "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Utils\\HvoUtils.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Utils\\HvoUtils.cs",
@@ -181,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "AiPawn.cs",
               "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\AI\\AiPawn.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\AI\\AiPawn.cs",
@@ -193,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "GraphicEditor.cs",
               "DocumentMoniker": "C:\\Users\\son\\HVO\\Library\\PackageCache\\com.unity.ugui@27299721f2fd\\Editor\\UGUI\\UI\\GraphicEditor.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@27299721f2fd\\Editor\\UGUI\\UI\\GraphicEditor.cs",
@@ -201,11 +249,12 @@
               "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@27299721f2fd\\Editor\\UGUI\\UI\\GraphicEditor.cs",
               "ViewState": "AgIAALIAAAAAAAAAAAAmwMoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-26T10:15:24.325Z"
+              "WhenOpened": "2025-10-26T10:15:24.325Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "ActionSO.cs",
               "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\Units\\Actions\\ActionSO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Units\\Actions\\ActionSO.cs",
@@ -217,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "PointToClick.cs",
               "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Scripts\\UI\\PointToClick.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\PointToClick.cs",
@@ -229,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "AiPawn.cs",
               "DocumentMoniker": "C:\\Users\\son\\HVO\\Assets\\Images\\Tiny Swords (Update 010)\\Scripts\\AI\\AiPawn.cs",
               "RelativeDocumentMoniker": "Assets\\Images\\Tiny Swords (Update 010)\\Scripts\\AI\\AiPawn.cs",

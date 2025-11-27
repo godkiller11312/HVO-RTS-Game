@@ -14,13 +14,17 @@ public class PlacementProcess
     private Sprite m_PlaceHolderTileSprite;
     private Color m_HighlightColor = new Color(0f, 0.8f, 1f, 0.4f);
     private Color m_BlockedColor = new Color(0f, 0.2f, 0f, 0.8f);
+
+    public int GoldCost => m_BuildAction.GoldCost;  
+    public int WoodCost => m_BuildAction.WoodCost;          
+    public BuildActionSO BuildAction => m_BuildAction;
     public PlacementProcess(BuildActionSO buildAction, Tilemap walkableTilemap, Tilemap overlayTilemap, Tilemap[] unreachableTilemaps)
     {
         m_PlaceHolderTileSprite = Resources.Load<Sprite>("Images/PlaceHolderTileSprite");
         m_BuildAction = buildAction;
         m_WalkableTilemap = walkableTilemap;
         m_OverlayTilemap = overlayTilemap;
-        m_UnreachableTilemaps = unreachableTilemaps;    
+        m_UnreachableTilemaps = unreachableTilemaps;
     }
 
     public void Update()
@@ -28,6 +32,11 @@ public class PlacementProcess
         if (m_PlacementOutline != null)
         {
             HighlightTiles(m_PlacementOutline.transform.position);
+        }
+
+        if (HvoUtils.IsPointerOverUIElement())
+        {
+            return;
         }
 
         if (HvoUtils.TryGetHoldPosition(out Vector3 worldPosition))
@@ -54,7 +63,7 @@ public class PlacementProcess
     void HighlightTiles(Vector3 outlinePosition)
     {
         Vector3Int buildingSize = m_BuildAction.BuildingSize; // Giả sử kích thước tòa nhà là 2x2
-        
+
         Vector3 pivotPosition = outlinePosition + m_BuildAction.OriginOffset;
         ClearHighlight();
         m_HightlightPositions = new Vector3Int[buildingSize.x * buildingSize.y];
@@ -69,17 +78,17 @@ public class PlacementProcess
         foreach (var tilePosition in m_HightlightPositions)
         {
             var tile = ScriptableObject.CreateInstance<Tile>();
-            tile.sprite = m_PlaceHolderTileSprite;  
+            tile.sprite = m_PlaceHolderTileSprite;
             if (CanPlaceTile(tilePosition))
             {
                 tile.color = m_HighlightColor;
             }
-               
+
             else
             {
                 tile.color = m_BlockedColor;
             }
-            
+
             m_OverlayTilemap.SetTile(tilePosition, tile);
             //m_overlayTilemap.SetTileFlags(tilePosition, TileFlags.None);       
             //m_overlayTilemap.SetColor(tilePosition, Color.green);
@@ -98,8 +107,8 @@ public class PlacementProcess
 
     bool CanPlaceTile(Vector3Int tilePosition)
     {
-        return m_WalkableTilemap.HasTile(tilePosition) && !IsUnreachableTilemap(tilePosition) && !IsBlockedByGameobject(tilePosition);  
-    }   
+        return m_WalkableTilemap.HasTile(tilePosition) && !IsUnreachableTilemap(tilePosition) && !IsBlockedByGameobject(tilePosition);
+    }
 
     bool IsUnreachableTilemap(Vector3Int tilePosition)
     {
@@ -111,22 +120,58 @@ public class PlacementProcess
             }
         }
         return false;
-    }   
+    }
     bool IsBlockedByGameobject(Vector3Int tilePosition)
     {
-        Vector3 tileSize = m_WalkableTilemap.cellSize;  
-        Collider2D[] colliders = Physics2D.OverlapBoxAll(tilePosition + tileSize / 2, tileSize *0.5f, 0);
-     
+        Vector3 tileSize = m_WalkableTilemap.cellSize;
+        Collider2D[] colliders = Physics2D.OverlapBoxAll(tilePosition + tileSize / 2, tileSize * 0.5f, 0);
+
         foreach (var collider in colliders)
         {
-            var layer = collider.gameObject.layer;  
-            if(layer == LayerMask.NameToLayer("Player"))
+            var layer = collider.gameObject.layer;
+            if (layer == LayerMask.NameToLayer("Player"))
             {
-                return true;    
-            }   
-           
+                return true;
+            }
+
         }
         return false;
+    }
+
+    public void ClearUp()
+    {
+        ClearHighlight();
+        if (m_PlacementOutline != null)
+        {
+            GameObject.Destroy(m_PlacementOutline);
+        }
+    }
+
+    public bool TryFinalizePlacement(out Vector3 buildPosition)
+    {
+        if( IsPlacementValid())
+        {
+            ClearHighlight();
+            buildPosition = m_PlacementOutline.transform.position;
+            Object.Destroy(m_PlacementOutline);
+            return true;
+        }
+        Debug.Log("Placement Invalid"); 
+        buildPosition = Vector3.zero;   
+        return false;       
+    }
+
+    bool IsPlacementValid()
+    {
+        foreach (var tilePosition in m_HightlightPositions)
+        {
+            if (!CanPlaceTile(tilePosition))
+            {
+                return false;
+            }
+        }   
+
+        return true;
     }
 }
 

@@ -14,13 +14,35 @@ public class HumanoidUnit : Unit
     }
     protected void Update()
     {
+        UpdateVelocity();
+        UpdateBehaviour();
+    }
+
+    protected virtual void UpdateBehaviour()
+    {
+
+    }
+
+    protected override void OnSetDestination()
+    {
+        ResetState();
+    }
+
+    protected virtual void UpdateVelocity()
+    {
         m_Velocity = new Vector2(
-            (transform.position.x - m_LastPosition.x) / Time.deltaTime,
-            (transform.position.z - m_LastPosition.z) / Time.deltaTime
-        );
+          (transform.position.x - m_LastPosition.x) / Time.deltaTime,
+          (transform.position.z - m_LastPosition.z) / Time.deltaTime
+      );
         m_LastPosition = transform.position;
-        IsMoving = m_Velocity.magnitude > 0f;
-        m_Animator.SetFloat("Speed", Mathf.Clamp01(CurrentSpeed));
+        var state = m_Velocity.magnitude > 0 ? UnitState.Moving : UnitState.Idle;
+        SetState(state);
+        m_Animator?.SetFloat("Speed", Mathf.Clamp01(CurrentSpeed));
+    }
+
+    void ResetState()
+    {
+        SetTask(UnitTask.None);
     }
 
 }
